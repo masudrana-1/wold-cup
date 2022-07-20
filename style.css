@@ -1,0 +1,303 @@
+/* common style */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header style  */
+
+.top-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+
+.head {
+    background-color:
+        #161616;
+    width: 90%;
+    /* margin: 0 auto; */
+    display: flex;
+    border-radius: 10px;
+}
+
+.text-area {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    color: #FFFFFF;
+    width: 50%;
+    padding: 100px;
+}
+
+.info h2 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.info p {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:
+        #DD0000;
+    width: 187px;
+    height: 56px;
+    padding: 16px 25px;
+    border-radius: 5px;
+}
+
+
+.image-area {
+    width: 50%;
+    padding: 33px 79px 0 0;
+
+}
+
+
+.image-area img {
+    width: 340px;
+    height: 640px;
+
+}
+
+.view {
+    /* display: none; */
+    visibility: hidden;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.view button {
+    background-color: #DD0000;
+    padding: 12px 29px;
+    border: 0;
+    border-radius: 5px;
+}
+
+/* header style end  */
+
+/* middle area style  */
+.middle-area {
+    width: 90%%;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.fixed-area {
+    background-color:
+        #161616;
+    width: 375px;
+    height: 312px;
+    margin-right: 25px;
+    border-radius: 10px;
+
+}
+
+.link a {
+    text-decoration: none;
+    color: #161616;
+    background-color: #FFFFFF;
+    ;
+    font-size: 20px;
+    margin: 35px;
+    padding: 17px 39px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.527);
+
+}
+
+.flexible-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+}
+
+.blogs {
+    width: 350px;
+    height: 362px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.527);
+}
+
+.blogs img {
+    width: 100%;
+}
+
+.info-area {
+    padding: 20px 10px;
+}
+
+.info-area p {
+    color: #161616;
+    font-size: 18px;
+}
+
+/* Middle area style end  */
+
+/* footer style start  */
+
+.footer-area {
+    color: #FFFFFF;
+    background-color: black;
+    height: 444px;
+    width: 100%;
+
+}
+
+.footer-area h1 {
+    text-align: center;
+    padding-top: 130px;
+}
+
+.contact-area {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.contact {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.contact a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.footer-icon {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ficon {
+    margin-left: 10px;
+}
+
+/* footer style end  */
+
+/* responsive */
+
+@media screen and (max-width: 480px) {
+    .head {
+        flex-direction: column;
+
+    }
+
+    .image-area {
+        margin: 0 auto;
+    }
+
+    .image-area img {
+        width: 281px;
+        height: 313px;
+
+    }
+
+    .middle {
+        flex-direction: column;
+    }
+
+    .blogs-area {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fixed-area {
+        background-color: #FFFFFF;
+        margin: 0 auto;
+    }
+
+
+    .flexible-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact a {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    /* .image-area {
+        margin: 0 auto;
+    } */
+
+    .image-area img {
+        width: 205px;
+        height: 760px;
+
+    }
+
+    .middle {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .fixed-area {
+        background-color: #FFFFFF;
+        margin: 0 auto;
+        height: 150px;
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+    .flexible-area {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 20px;
+    }
+
+    .view {
+        visibility: visible;
+    }
+
+    .contact {
+        /* flex-direction: column; */
+        /* text-align: center; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+}

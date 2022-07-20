@@ -71,8 +71,8 @@ body {
 }
 
 .view {
-    display: none;
-    /* visibility: hidden; */
+    /* display: none; */
+    visibility: hidden;
     text-align: center;
     margin: 40px 0;
 }
@@ -107,9 +107,9 @@ body {
 
 }
 
-.link .group-link,
-.match-link,
-.blog-link {
+.link .blog-link,
+.group-link,
+.match-link {
     text-decoration: none;
     color: #161616;
     background-color: #FFFFFF;
@@ -125,7 +125,7 @@ body {
 
 }
 
-.blog-link {
+.match-link {
     background-color: #DD0000;
 }
 
@@ -143,12 +143,27 @@ body {
     box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.527);
 }
 
-.blogs img {
-    width: 100%;
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 49px 27px;
+}
+
+.image img {
+    height: 100px;
+    width: 133px;
+    margin: 0 5px;
 }
 
 .info-area {
     padding: 20px 10px;
+    text-align: center;
+}
+
+.info-area h3 {
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .info-area p {
@@ -295,8 +310,7 @@ body {
     }
 
     .view {
-        /* visibility: visible; */
-        display: block;
+        visibility: visible;
     }
 
     .contact {

@@ -1,10 +1,14 @@
-/* common style */
+/* ------------------
+common style 
+----------------------*/
 body {
     margin: 0;
     padding: 0;
 }
 
-/* header style  */
+/*----------------
+---- header style 
+------------------ */
 
 .top-area {
     display: flex;
@@ -43,6 +47,7 @@ body {
     font-size: 16px;
     margin-top: 30px;
     margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .info a {
@@ -54,6 +59,13 @@ body {
     height: 56px;
     padding: 16px 25px;
     border-radius: 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.info a:hover {
+    opacity: 1;
+    padding: 19px 28px;
 }
 
 
@@ -70,23 +82,15 @@ body {
 
 }
 
-.view {
-    display: none;
-    /* visibility: hidden; */
-    text-align: center;
-    margin: 40px 0;
-}
 
-.view button {
-    background-color: #DD0000;
-    padding: 12px 29px;
-    border: 0;
-    border-radius: 5px;
-}
 
-/* header style end  */
+/*--------------------
+ -----header style end 
+ ---------------------- */
 
-/* middle area style  */
+/*---------------------
+--- middle area style 
+----------------------- */
 .middle-area {
     width: 90%%;
 }
@@ -145,6 +149,8 @@ body {
 
 .blogs img {
     width: 100%;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .info-area {
@@ -154,11 +160,30 @@ body {
 .info-area p {
     color: #161616;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Middle area style end  */
+.view {
+    display: none;
+    /* visibility: hidden; */
+    text-align: center;
+    margin: 40px 0;
+}
 
-/* footer style start  */
+.view button {
+    background-color: #DD0000;
+    padding: 12px 29px;
+    border: 0;
+    border-radius: 5px;
+}
+
+/*-------------------
+- Middle area style end 
+--------------------- */
+
+/*---------------------
+- footer style start  
+-----------------------*/
 
 .footer-area {
     color: #FFFFFF;
@@ -201,16 +226,26 @@ body {
 
 .ficon {
     margin-left: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-/* footer style end  */
+/*-------------------
+--- footer style end 
+-------------------- */
 
-/* responsive */
+/*---------------------
+------ responsive 
+------------------------*/
 
 @media screen and (max-width: 480px) {
     .head {
         flex-direction: column;
 
+    }
+
+    .info h2 {
+        font-size: 50px;
     }
 
     .image-area {
@@ -226,6 +261,7 @@ body {
     .middle {
         flex-direction: column;
     }
+
 
     .blogs-area {
         display: flex;
@@ -258,6 +294,10 @@ body {
         margin: 0 auto;
     } */
 
+    .info h2 {
+        font-size: 60px;
+    }
+
     .image-area img {
         width: 205px;
         height: 760px;
@@ -287,6 +327,11 @@ body {
 
     }
 
+    .link .group-link,
+    .match-link,
+    .blog-link {
+        font-size: 16px;
+    }
 
 
     .flexible-area {

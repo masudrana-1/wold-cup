@@ -246,9 +246,15 @@ body {
 
     }
 
+    .info {
+        text-align: center;
+    }
+
+
     .info h2 {
         font-size: 50px;
     }
+
 
     .image-area {
         margin: 0 auto;

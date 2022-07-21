@@ -92,10 +92,6 @@ body {
 --- middle area style 
 ----------------------- */
 
-.middle-area {
-    width: 90%%;
-}
-
 .middle {
     display: flex;
     justify-content: center;
@@ -199,6 +195,7 @@ body {
     padding-top: 130px;
 }
 
+
 .contact-area {
     display: flex;
     justify-content: center;
@@ -253,6 +250,11 @@ body {
 ------------------------*/
 
 @media screen and (max-width: 480px) {
+
+    .info h2 {
+        font-size: 50px;
+    }
+
     .head {
         flex-direction: column;
 
@@ -299,6 +301,10 @@ body {
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
+
+    .info h2 {
+        font-size: 60px;
+    }
 
     .image-area img {
         width: 205px;

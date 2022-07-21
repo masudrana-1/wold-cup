@@ -162,12 +162,12 @@ body {
 
 .view {
     display: none;
-    /* visibility: hidden; */
     text-align: center;
     margin: 40px 0;
 }
 
 .view button {
+    color: #FFFFFF;
     background-color: #DD0000;
     padding: 12px 29px;
     border: 0;
